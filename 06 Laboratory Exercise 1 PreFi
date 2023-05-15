@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosales</title>
+    <script>
+        function checkAge() {
+      var age = prompt("What is the age of your favorite artist?");
+      if (age < 25) {
+        document.getElementById("result").innerHTML = "They're " + age + " years old and they're younger than Google";
+      } else if (age == 25) {
+        document.getElementById("result").innerHTML = "They're " + age + " years old and they're as old as Google";
+      } else {
+        alert("They're " + age + " years old and they're older than Google");
+      }
+    }
+    </script>
+</head>
+<body>
+        <p>Performance Task Rosales</p>
+        <h3>Check Age</h3>
+        <button onclick="checkAge()">Check</button>
+    <br>
+    <div id="result"></div>
+</body>
+</html>
